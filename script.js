@@ -2,9 +2,32 @@ var locations = []; // this array will hold your objects
 
 // object constructor
 
+var State = function(state, revenue, locationCount) {
+  this.state = state;
+  this.revenue = revenue;
+  this.locationCount = locationCount;
+  this.averageRevenue = function() {
+    return this.revenue / this.locationCount;
+  };
+};
+
+
 // object instances
 
+var illinois = new State('IL', 5000, 12);
+var minnesota = new State('MN',300, 3);
+var nevada = new State('NV', 25000, 1);
+
 // push object instances to locations array
+
+
+
+//Fork the repo for this project.
+//Create an object constructor for each state (probably named something like State or Region).
+//The object properties should include state, revenue, locationCount).
+//Create a function, within the constructor, that calculates and returns the average revenue. Name this function averageRevenue.
+//Create an instance of each object using the provided data.
+
 
 // DO NOT MODIFY THIS CODE
 $(document).ready(function () {
